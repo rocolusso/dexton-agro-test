@@ -79,7 +79,7 @@ export default function Home() {
 
               <div className={'services container mx-auto py-[100px]'} id={'services'}>
 
-                  <div className={'text-[30px] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500 text-[60px] text-center uppercase font-bold'}>
+                  <div className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
                       Dienstleistungen
                   </div>
 
@@ -117,7 +117,7 @@ export default function Home() {
 
               <div className={'feauters container mx-auto py-[100px]'} id={'feauters'}>
 
-                  <div className={'text-[30px] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500 text-[60px] text-center uppercase font-bold'}>
+                  <div className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
                       Eigenschaften
                   </div>
 
@@ -158,7 +158,7 @@ export default function Home() {
 
               <div className={'benefits container mx-auto py-[100px]'} id={'benefits'}>
 
-                  <div className={'text-[30px] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500 text-[60px] text-center uppercase font-bold'}>
+                  <div className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
                       Vorteile
                   </div>
 
