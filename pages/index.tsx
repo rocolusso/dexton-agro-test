@@ -212,7 +212,7 @@ export default function Home() {
                               Phone: +4915778656905
                           </div>
                           <div className={'p-5'}>
-                              Email: info@dexton-handel.de
+                              Email: info@dexton-handel.com
                           </div>
                       </div>
 
