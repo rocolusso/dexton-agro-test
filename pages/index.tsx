@@ -14,11 +14,11 @@ export default function Home() {
       <div className={''}>
           <header className={' pb-5 pt-5 bg-green-950'}>
               <div className={'container mx-auto '}>
-                  <nav className={'grid grid-cols-1 sm:grid-cols-2 items-center justify-between  mx-auto '}>
+                  <nav className={'flex flex-col xl:flex-row items-center justify-between  mx-auto '}>
                       <Link  href={'/'} className={'px-5 sm:px-0 logo text-[60px] text-white  max-w-fit'}>
                           DEXTON
                       </Link>
-                      <div className={'hidden    sm:flex flex-col sm:flex-row  items-center gap-10 mx-auto max-w-fit text-white'}>
+                      <div className={'hidden md:flex  flex-wrap gap-10 mx-auto max-w-fit text-white'}>
                           <Link href={'/'}
                                 className={'px-8 py-5   hover:border-b-black    hover:scale-110 duration-500 uppercase underline hover:bg-yellow-500 hover:text-black border border-b-white border-t-transparent border-r-transparent border-l-transparent    '}>
                               Home
@@ -79,7 +79,7 @@ export default function Home() {
 
               <div className={'services container mx-auto py-[100px]'} id={'services'}>
 
-                  <div className={'hover:underline hover:scale-110 duration-500 text-[60px] text-center uppercase font-bold'}>
+                  <div className={'text-[2rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500 text-[60px] text-center uppercase font-bold'}>
                       Dienstleistungen
                   </div>
 
@@ -117,7 +117,7 @@ export default function Home() {
 
               <div className={'feauters container mx-auto py-[100px]'} id={'feauters'}>
 
-                  <div className={'hover:underline hover:scale-110 duration-500 text-[60px] text-center uppercase font-bold'}>
+                  <div className={'text-[2rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500 text-[60px] text-center uppercase font-bold'}>
                       Eigenschaften
                   </div>
 
@@ -158,7 +158,7 @@ export default function Home() {
 
               <div className={'benefits container mx-auto py-[100px]'} id={'benefits'}>
 
-                  <div className={'hover:underline hover:scale-110 duration-500 text-[60px] text-center uppercase font-bold'}>
+                  <div className={'text-[2rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500 text-[60px] text-center uppercase font-bold'}>
                       Vorteile
                   </div>
 
@@ -225,11 +225,11 @@ export default function Home() {
 
           <footer className={' pb-5 pt-5 bg-green-950'}>
               <div className={'container mx-auto '}>
-                  <div className={'flex flex-wrap items-center justify-between  mx-auto '}>
+                  <div className={'flex flex-col md:flex-row items-center justify-between  mx-auto '}>
                       <Link href={'/'} className={'px-5 sm:px-0 logo text-[60px] text-white  max-w-fit'}>
                           DEXTON
                       </Link>
-                      <div className={'flex  flex-col sm:flex-row    items-center gap-10 mx-auto max-w-fit text-white'}>
+                      <div className={'flex  flex-col md:flex-row  flex-wrap   items-center gap-10 mx-auto max-w-fit text-white'}>
                           <Link href={'/'}
                                 className={'px-8 py-5   hover:border-b-black    hover:scale-110 duration-500 uppercase underline hover:bg-yellow-500 hover:text-black border border-b-white border-t-transparent border-r-transparent border-l-transparent    '}>
                               Home
