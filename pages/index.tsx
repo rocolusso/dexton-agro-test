@@ -210,9 +210,10 @@ export default function Home() {
                           </div>
                           <div className={'p-5'}>
                               Phone: +4915778656905
+
                           </div>
                           <div className={'p-5'}>
-                              Email: info@dexton-handel.com
+                              Email: salesdepartment@dexton-handel.com
                           </div>
                       </div>
 
