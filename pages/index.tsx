@@ -213,7 +213,7 @@ export default function Home() {
 
                           </div>
                           <div className={'p-5'}>
-                              Email: salesdepartment@dexton-handel.com
+                              Email: salesdepartment@dexton-handel-gmbh.de
                           </div>
                       </div>
 
