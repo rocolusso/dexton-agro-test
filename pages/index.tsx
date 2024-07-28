@@ -175,8 +175,6 @@ export default function Home() {
 
                       <div className={'max-w-[600px] mx-auto'}>
                           <ul className={'ml-[40px] text-[24px]'}>
-                              <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Hochwertige Öle: Wir beziehen unsere Öle von vertrauenswürdigen Lieferanten, um höchste Qualität und Reinheit zu gewährleisten.</li>
 
                               <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
                                   Wettbewerbsfähige Preise: Unsere Großhandelspreise sind darauf ausgelegt, Ihnen ein hervorragendes Preis-Leistungs-Verhältnis zu bieten.
