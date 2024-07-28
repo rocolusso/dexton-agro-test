@@ -203,13 +203,13 @@ export default function Home() {
 
                       <div className={'mx-auto bg-green-950 text-white  p-10 mt-[50px] max-w-[700px] grid grid-cols-1 items-center justify-center text-[24px]'}>
                           <div className={'p-5'}>
-                              Company Adress:
+                              Company Address:
                               Am Heerdter Krankenhaus 4
                               40549 Düsseldorf
                               Germany
                           </div>
                           <div className={'p-5'}>
-                              Phone: +4915778656905
+                              Phone: +4915778656905 <br/> (WhatsApp verfügbar)
 
                           </div>
                           <div className={'p-5'}>
