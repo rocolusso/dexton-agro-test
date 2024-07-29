@@ -10,7 +10,7 @@ import logo from '@/public/assets/images/logo.png'
 
 import item1 from '@/public/assets/products/item1.jpeg'
 import item2 from '@/public/assets/products/item2.jpeg'
-import item3 from '@/public/assets/products/item3.jpeg'
+import item3 from '@/public/assets/products/item3_1.jpg'
 
 import Link from "next/link";
 
@@ -204,9 +204,9 @@ export default function Home() {
                       PRODUKTE UND QUALITÄT
                   </div>
 
-                  <div className={'grid grid-cols-1 sm:grid-cols-3 gap-10 px-5 py-10 items-center'}>
+                  <div className={'grid grid-cols-1 sm:grid-cols-3 items-start  gap-10 px-5 py-10 '}>
 
-                      <div className={'flex flex-col'}>
+                      <div className={''}>
                           <Image
                               className={'rounded-2xl hover:translate-x-5 duration-300'}
                               src={item1}
@@ -250,7 +250,7 @@ export default function Home() {
                       </div>
 
 
-                      <div className={'flex flex-col'}>
+                      <div className={''}>
                           <Image
                               className={'rounded-2xl hover:translate-x-5 duration-300'}
                               src={item2}
@@ -287,7 +287,7 @@ export default function Home() {
                           </div>
                       </div>
 
-                      <div className={'flex flex-col'}>
+                      <div className={''}>
                           <Image
                               className={'rounded-2xl hover:translate-x-5 duration-300'}
                               src={item3}
