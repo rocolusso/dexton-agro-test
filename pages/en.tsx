@@ -60,8 +60,8 @@ export default function Home() {
                       </div>
 
                       <div className={'locale'}>
-                          <Link href={'/en'} className={'p-3 bg-yellow-500 text-black rounded'}>
-                              EN
+                          <Link href={'/'} className={'p-3 bg-yellow-500 text-black rounded'}>
+                              DE
                           </Link>
                       </div>
 
@@ -88,28 +88,8 @@ export default function Home() {
                               Dexton Handel GmbH
                           </div>
                           <div className={'mx-auto'}>
-                              {/*<p className={'text-[24px] text-center'}>*/}
-                              {/*    Unser Unternehmen ist auf den Großhandel und die Massenverteilung verschiedener*/}
-                              {/*    Öle spezialisiert, darunter Sonnenblumenöl, Sojabohnenöl, Rapsöl und mehr.*/}
-                              {/*    Wir sind bestrebt, hochwertige Produkte anzubieten, die den vielfältigen*/}
-                              {/*    Bedürfnissen unserer Kunden gerecht werden.*/}
-                              {/*</p>*/}
-
                               <p className={'text-[24px] '}>
-                                  Unser Unternehmen spezialisiert sich auf den Großverkauf von Pflanzenöl, wie unraffiniertem und raffiniertem Sonnenblumenöl, Sojaöl und Rapsöl, die aus eigenem Rohmaterial auf dem Territorium von Bulgarien, Argentinien und der Ukraine hergestellt werden.
-                                  Wir bieten hochwertige Produkte, die den unterschiedlichen Bedürfnissen unserer Kunden entsprechen.
-                                  Monatliche Produktionsmenge:
-                                  Bulgarien
-
-                                  Speiseöl, unraffiniertes Sonnenblumenöl 1000 Tonnen,
-                                  Speiseöl, raffiniertes Sonnenblumenöl 800 Tonnen.
-                                  Argentinien
-                                  Speiseöl, unraffiniertes Sonnenblumenöl 3500 Tonnen.
-                                  Ukraine
-                                  Speiseöl, unraffiniertes Sonnenblumenöl 1000 Tonnen,
-                                  Speiseöl, raffiniertes Sonnenblumenöl 900 Tonnen,
-                                  Speiseöl, unraffiniertes Sojaöl 700 Tonnen,
-                                  Speiseöl, unraffiniertes Rapsöl 700 Tonnen.
+                                  Our company specializes in the wholesale distribution of vegetable oil, such as unrefined and refined sunflower oil, soybean oil, and rapeseed oil, produced from our own raw materials in Bulgaria, Argentina, and Ukraine. We offer high-quality products that meet the diverse needs of our customers. Monthly production volume: Bulgaria Edible oil, unrefined sunflower oil 1000 tons, Edible oil, refined sunflower oil 800 tons. Argentina Edible oil, unrefined sunflower oil 3500 tons. Ukraine Edible oil, unrefined sunflower oil 1000 tons, Edible oil, refined sunflower oil 900 tons, Edible oil, unrefined soybean oil 700 tons, Edible oil, unrefined rapeseed oil 700 tons.
                               </p>
                           </div>
                       </div>
@@ -121,7 +101,7 @@ export default function Home() {
 
                   <div
                       className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
-                      Dienstleistungen
+                      Services
                   </div>
 
                   <div className={'grid grid-cols-1 sm:grid-cols-2 px-5 py-10 items-center'}>
@@ -138,18 +118,15 @@ export default function Home() {
                       <div className={'max-w-[600px] mx-auto'}>
                           <ul className={'ml-[40px] text-[24px]'}>
                               <li className={'list-disc py-5 hover:p-5 hover:text-white hover:bg-green-800 hover:translate-x-5 duration-300'}>
-                                  Massenverteilung: Effiziente Massenverteilungsdienste, um große Bestellungen nahtlos
-                                  zu bewältigen.
+                                  Bulk Distribution: Efficient bulk distribution services to seamlessly handle large orders.
                               </li>
 
                               <li className={'list-disc py-5 hover:p-5 hover:text-white hover:bg-green-800 hover:translate-x-5 duration-300'}>
-                                  Logistikunterstützung: Umfassende Logistikunterstützung zur Verwaltung von Transport
-                                  und Lieferung.
+                                  Logistics Support: Comprehensive logistics support to manage transportation and delivery.
                               </li>
 
                               <li className={'list-disc py-5 hover:p-5 hover:text-white hover:bg-green-800 hover:translate-x-5 duration-300'}>
-                                  Kundendienst: Ein engagiertes Kundendienstteam steht Ihnen für Anfragen und
-                                  Bestellungen zur Verfügung.
+                                  Customer Service: A dedicated customer service team is available for inquiries and orders.
                               </li>
                           </ul>
                       </div>
@@ -164,7 +141,7 @@ export default function Home() {
 
                   <div
                       className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
-                      Produkte
+                      Products
                   </div>
 
                   <div className={'grid grid-cols-1 sm:grid-cols-2 px-5 py-10 items-center'}>
@@ -173,17 +150,15 @@ export default function Home() {
                       <div className={'max-w-[600px] mx-auto'}>
                           <ul className={'ml-[40px] text-[24px]'}>
                               <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Breites Sortiment an Ölen: Wir bieten eine vielfältige Auswahl an Ölen, darunter
-                                  Sonnenblumenöl, Sojabohnenöl, Rapsöl und andere.
+                                  Wide Range of Oils: We offer a diverse selection of oils, including sunflower oil, soybean oil, rapeseed oil, and others.
                               </li>
 
                               <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Maßgeschneiderte Verpackungsoptionen: Angepasste Verpackungslösungen, um Ihren
-                                  spezifischen Geschäftsanforderungen gerecht zu werden.
+                                  Customized Packaging Options: Tailored packaging solutions to meet your specific business requirements.
                               </li>
 
                               <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Qualitätssicherung: Strenge Qualitätskontrollprozesse garantieren höchste Standards.
+                                  Quality Assurance: Strict quality control processes ensure the highest standards.
                               </li>
                           </ul>
                       </div>
@@ -208,7 +183,7 @@ export default function Home() {
 
                   <div
                       className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
-                      PRODUKTE UND QUALITÄT
+                      Products and quality
                   </div>
 
                   <div className={'grid grid-cols-1 sm:grid-cols-3 items-start  gap-10 px-5 py-10 '}>
@@ -225,32 +200,32 @@ export default function Home() {
 
                           <div className={'max-w-[600px] p-3 mx-auto'}>
                               <div className={'text-[30px]'}>
-                                  Indikatoren für unraffiniertes Rapsöl:
+                                  Unrefined rapeseed oil indicators:
                               </div>
                               <ul className={'ml-[40px] text-[24px]'}>
                                   <li className={'list-disc py-5    '}>
-                                      Farbwert, max. – 50 mg. Iod
+                                      Color value, max. – 50 mg. iodine
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Säurezahl, max. – 3 (KOH) mg/g
+                                      Acid number, max. – 3 (KOH) mg/g
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Massenanteil an entfetteten Verunreinigungen, max. – 0,1%
+                                      Mass fraction of defatted impurities, max. – 0.1%
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Massenanteil an Feuchtigkeit und flüchtigen Stoffen, max. – 0,1%
+                                      Mass fraction of moisture and volatile substances, max. –  0.1%
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Peroxidzahl, max. – 5 ½ O mmol/kg
+                                      Peroxide number, max. – 5 ½ O mmol/kg.
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Phosphorgehalt, max. – 270 ppm
+                                      Phosphorus content, max. – 270 ppm.
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Blei (PB), max. – 0,1
+                                      Lead (PB), max. – 0.1
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Arsen (AC), max. – 0,1
+                                      Arsenic (AC), max. – 0.1
                                   </li>
                               </ul>
                           </div>
@@ -269,26 +244,26 @@ export default function Home() {
 
                           <div className={'max-w-[600px] p-3 mx-auto'}>
                               <div className={'text-[30px]'}>
-                                  Indikatoren für unraffiniertes Sonnenblumenöl:
+                                  Unrefined sunflower oil indicators:
                               </div>
                               <ul className={'ml-[40px] text-[24px]'}>
                                   <li className={'list-disc py-5    '}>
-                                      Farbwert, max. – 20 mg. Iod
+                                      Color value, max. – 20 mg. iodine
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Säurezahl, max. – 3 (KOH) mg/g
+                                      Acid value, max. – 3 (KOH) mg/g.
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Massenanteil an entfetteten Verunreinigungen, max. – 0,1%
+                                      Mass fraction of defatted impurities, max. –  0.1%.
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Massenanteil an Feuchtigkeit und flüchtigen Stoffen, max. – 0,2%
+                                      Mass fraction of moisture and volatile substances, max. –  0.2%.
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Peroxidzahl, max. – 5 ½ O mmol/kg
+                                      Peroxide number, max. –  5 ½ O mmol/kg.
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Phosphorgehalt, max. – 230 ppm
+                                      Phosphorus content, max. – 230 ppm.
                                   </li>
                               </ul>
                           </div>
@@ -306,26 +281,26 @@ export default function Home() {
 
                           <div className={'max-w-[600px] p-3 mx-auto'}>
                               <div className={'text-[30px]'}>
-                                  Indikatoren für unraffiniertes Sojaöl:
+                                  Unrefined soybean oil indicators:
                               </div>
                               <ul className={'ml-[40px] text-[24px]'}>
                                   <li className={'list-disc py-5    '}>
-                                      Farbwert, max. – 60 mg. Iod
+                                      Color value, max. – 60 mg. iodine
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Säurezahl, max. – 1,5 (KOH) mg/g
+                                      Acid number, max. – 1.5 (KOH) mg/g.
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Massenanteil an entfetteten Verunreinigungen, max. – 0,1%
+                                      Mass fraction of defatted impurities, max. – 0.1%
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Massenanteil an Feuchtigkeit und flüchtigen Stoffen, max. – 0,1%
+                                      Mass fraction of moisture and volatile substances, max. –  0.1%
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Peroxidzahl, max. – 4 ½ O mmol/kg
+                                      Peroxide number, max. –  4 ½ O mmol/kg.
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Phosphorgehalt, max. – 290 ppm
+                                      Phosphorus content, max. – 290 ppm.
                                   </li>
                               </ul>
                           </div>
@@ -341,7 +316,7 @@ export default function Home() {
 
                   <div
                       className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
-                      Vorteile
+                      Benefits
                   </div>
 
                   <div className={'grid grid-cols-1 sm:grid-cols-2 px-5 py-10 items-center'}>
@@ -359,13 +334,12 @@ export default function Home() {
                           <ul className={'ml-[40px] text-[24px]'}>
 
                               <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Wettbewerbsfähige Preise: Unsere Großhandelspreise sind darauf ausgelegt, Ihnen ein
-                                  hervorragendes Preis-Leistungs-Verhältnis zu bieten.
+                                  Competitive Prices: Our wholesale prices are designed to offer you excellent value for money.
+
                               </li>
 
                               <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Zuverlässige Lieferkette: Mit einem robusten Vertriebsnetz gewährleisten wir eine
-                                  pünktliche Lieferung und eine konstante Versorgung.
+                                  Reliable Supply Chain: With a robust distribution network, we ensure timely delivery and consistent supply.
                               </li>
                           </ul>
                       </div>
@@ -428,7 +402,7 @@ export default function Home() {
 
                       <div
                           className={'hover:underline hover:scale-110 duration-500 text-[60px] text-white text-center uppercase font-bold'}>
-                          Kontakte
+                          Contacts
                       </div>
 
                       <div
@@ -440,7 +414,7 @@ export default function Home() {
                               Germany
                           </div>
                           <div className={'p-5'}>
-                              Phone: +4915778656905 <br/> (WhatsApp verfügbar)
+                              Phone: +4915778656905 <br/> (WhatsApp available)
 
                           </div>
                           <div className={'p-5'}>
