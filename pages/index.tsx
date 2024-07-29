@@ -88,13 +88,6 @@ export default function Home() {
                               Dexton Handel GmbH
                           </div>
                           <div className={'mx-auto'}>
-                              {/*<p className={'text-[24px] text-center'}>*/}
-                              {/*    Unser Unternehmen ist auf den Großhandel und die Massenverteilung verschiedener*/}
-                              {/*    Öle spezialisiert, darunter Sonnenblumenöl, Sojabohnenöl, Rapsöl und mehr.*/}
-                              {/*    Wir sind bestrebt, hochwertige Produkte anzubieten, die den vielfältigen*/}
-                              {/*    Bedürfnissen unserer Kunden gerecht werden.*/}
-                              {/*</p>*/}
-
                               <p className={'text-[24px] '}>
                                   Unser Unternehmen spezialisiert sich auf den Großverkauf von Pflanzenöl, wie unraffiniertem und raffiniertem Sonnenblumenöl, Sojaöl und Rapsöl, die aus eigenem Rohmaterial auf dem Territorium von Bulgarien, Argentinien und der Ukraine hergestellt werden.
                                   Wir bieten hochwertige Produkte, die den unterschiedlichen Bedürfnissen unserer Kunden entsprechen.
@@ -172,10 +165,6 @@ export default function Home() {
 
                       <div className={'max-w-[600px] mx-auto'}>
                           <ul className={'ml-[40px] text-[24px]'}>
-                              <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Breites Sortiment an Ölen: Wir bieten eine vielfältige Auswahl an Ölen, darunter
-                                  Sonnenblumenöl, Sojabohnenöl, Rapsöl und andere.
-                              </li>
 
                               <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
                                   Maßgeschneiderte Verpackungsoptionen: Angepasste Verpackungslösungen, um Ihren
@@ -214,9 +203,13 @@ export default function Home() {
                   <div className={'grid grid-cols-1 sm:grid-cols-3 items-start  gap-10 px-5 py-10 '}>
 
                       <div className={''}>
+
+                          <div className={'text-[30px]'}>
+                              Indikatoren für unraffiniertes Rapsöl:
+                          </div>
                           <Image
                               className={'rounded-2xl hover:translate-x-5 duration-300'}
-                              src={item1}
+                              src={item3}
                               alt={''}
                               width={1000}
                               height={1000}
@@ -224,9 +217,7 @@ export default function Home() {
 
 
                           <div className={'max-w-[600px] p-3 mx-auto'}>
-                              <div className={'text-[30px]'}>
-                                  Indikatoren für unraffiniertes Rapsöl:
-                              </div>
+
                               <ul className={'ml-[40px] text-[24px]'}>
                                   <li className={'list-disc py-5    '}>
                                       Farbwert, max. – 50 mg. Iod
@@ -258,6 +249,10 @@ export default function Home() {
 
 
                       <div className={''}>
+
+                          <div className={'text-[30px]'}>
+                              Indikatoren für unraffiniertes Sonnenblumenöl:
+                          </div>
                           <Image
                               className={'rounded-2xl hover:translate-x-5 duration-300'}
                               src={item2}
@@ -268,9 +263,7 @@ export default function Home() {
 
 
                           <div className={'max-w-[600px] p-3 mx-auto'}>
-                              <div className={'text-[30px]'}>
-                                  Indikatoren für unraffiniertes Sonnenblumenöl:
-                              </div>
+
                               <ul className={'ml-[40px] text-[24px]'}>
                                   <li className={'list-disc py-5    '}>
                                       Farbwert, max. – 20 mg. Iod
@@ -295,9 +288,13 @@ export default function Home() {
                       </div>
 
                       <div className={''}>
+
+                          <div className={'text-[30px]'}>
+                              Indikatoren für unraffiniertes Sojaöl:
+                          </div>
                           <Image
                               className={'rounded-2xl hover:translate-x-5 duration-300'}
-                              src={item3}
+                              src={item1}
                               alt={''}
                               width={1000}
                               height={1000}
@@ -305,9 +302,7 @@ export default function Home() {
 
 
                           <div className={'max-w-[600px] p-3 mx-auto'}>
-                              <div className={'text-[30px]'}>
-                                  Indikatoren für unraffiniertes Sojaöl:
-                              </div>
+
                               <ul className={'ml-[40px] text-[24px]'}>
                                   <li className={'list-disc py-5    '}>
                                       Farbwert, max. – 60 mg. Iod
@@ -339,7 +334,7 @@ export default function Home() {
 
               <div className={'benefits container mx-auto py-[100px]'} id={'benefits'}>
 
-                  <div
+              <div
                       className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
                       Vorteile
                   </div>

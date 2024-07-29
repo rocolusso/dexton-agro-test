@@ -149,9 +149,6 @@ export default function Home() {
 
                       <div className={'max-w-[600px] mx-auto'}>
                           <ul className={'ml-[40px] text-[24px]'}>
-                              <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Wide Range of Oils: We offer a diverse selection of oils, including sunflower oil, soybean oil, rapeseed oil, and others.
-                              </li>
 
                               <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
                                   Customized Packaging Options: Tailored packaging solutions to meet your specific business requirements.
@@ -189,9 +186,14 @@ export default function Home() {
                   <div className={'grid grid-cols-1 sm:grid-cols-3 items-start  gap-10 px-5 py-10 '}>
 
                       <div className={''}>
+
+                          <div className={'text-[30px]'}>
+                              Unrefined rapeseed oil indicators:
+                          </div>
+
                           <Image
                               className={'rounded-2xl hover:translate-x-5 duration-300'}
-                              src={item1}
+                              src={item3}
                               alt={''}
                               width={1000}
                               height={1000}
@@ -199,9 +201,7 @@ export default function Home() {
 
 
                           <div className={'max-w-[600px] p-3 mx-auto'}>
-                              <div className={'text-[30px]'}>
-                                  Unrefined rapeseed oil indicators:
-                              </div>
+
                               <ul className={'ml-[40px] text-[24px]'}>
                                   <li className={'list-disc py-5    '}>
                                       Color value, max. – 50 mg. iodine
@@ -213,7 +213,7 @@ export default function Home() {
                                       Mass fraction of defatted impurities, max. – 0.1%
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Mass fraction of moisture and volatile substances, max. –  0.1%
+                                      Mass fraction of moisture and volatile substances, max. – 0.1%
                                   </li>
                                   <li className={'list-disc py-5     '}>
                                       Peroxide number, max. – 5 ½ O mmol/kg.
@@ -233,6 +233,11 @@ export default function Home() {
 
 
                       <div className={''}>
+
+                          <div className={'text-[30px]'}>
+                              Unrefined sunflower oil indicators:
+                          </div>
+
                           <Image
                               className={'rounded-2xl hover:translate-x-5 duration-300'}
                               src={item2}
@@ -243,9 +248,7 @@ export default function Home() {
 
 
                           <div className={'max-w-[600px] p-3 mx-auto'}>
-                              <div className={'text-[30px]'}>
-                                  Unrefined sunflower oil indicators:
-                              </div>
+
                               <ul className={'ml-[40px] text-[24px]'}>
                                   <li className={'list-disc py-5    '}>
                                       Color value, max. – 20 mg. iodine
@@ -254,13 +257,13 @@ export default function Home() {
                                       Acid value, max. – 3 (KOH) mg/g.
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Mass fraction of defatted impurities, max. –  0.1%.
+                                      Mass fraction of defatted impurities, max. – 0.1%.
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Mass fraction of moisture and volatile substances, max. –  0.2%.
+                                      Mass fraction of moisture and volatile substances, max. – 0.2%.
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Peroxide number, max. –  5 ½ O mmol/kg.
+                                      Peroxide number, max. – 5 ½ O mmol/kg.
                                   </li>
                                   <li className={'list-disc py-5     '}>
                                       Phosphorus content, max. – 230 ppm.
@@ -270,9 +273,13 @@ export default function Home() {
                       </div>
 
                       <div className={''}>
+                          <div className={'text-[30px]'}>
+                              Unrefined soybean oil indicators:
+                          </div>
+
                           <Image
                               className={'rounded-2xl hover:translate-x-5 duration-300'}
-                              src={item3}
+                              src={item1}
                               alt={''}
                               width={1000}
                               height={1000}
@@ -280,9 +287,7 @@ export default function Home() {
 
 
                           <div className={'max-w-[600px] p-3 mx-auto'}>
-                              <div className={'text-[30px]'}>
-                                  Unrefined soybean oil indicators:
-                              </div>
+
                               <ul className={'ml-[40px] text-[24px]'}>
                                   <li className={'list-disc py-5    '}>
                                       Color value, max. – 60 mg. iodine
@@ -294,10 +299,10 @@ export default function Home() {
                                       Mass fraction of defatted impurities, max. – 0.1%
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Mass fraction of moisture and volatile substances, max. –  0.1%
+                                      Mass fraction of moisture and volatile substances, max. – 0.1%
                                   </li>
                                   <li className={'list-disc py-5     '}>
-                                      Peroxide number, max. –  4 ½ O mmol/kg.
+                                      Peroxide number, max. – 4 ½ O mmol/kg.
                                   </li>
                                   <li className={'list-disc py-5     '}>
                                       Phosphorus content, max. – 290 ppm.
