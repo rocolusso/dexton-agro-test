@@ -44,7 +44,7 @@ export default function Home() {
                                 className={'px-8 py-5    hover:border-b-black    hover:scale-110 duration-500 uppercase underline hover:bg-yellow-500 hover:text-black border border-b-white border-t-transparent border-r-transparent border-l-transparent    '}>
                               Services
                           </Link>
-                          <Link href={'/#feauters'}
+                          <Link href={'/#products1'}
                                 className={'px-8 py-5  hover:border-b-black     hover:scale-110 duration-500 uppercase underline hover:bg-yellow-500 hover:text-black border border-b-white border-t-transparent border-r-transparent border-l-transparent    '}>
                               Products
                           </Link>
@@ -153,7 +153,7 @@ export default function Home() {
               </div>
 
 
-              <div className={'feauters container mx-auto py-[100px]'} id={'feauters'}>
+              <div className={'feauters container mx-auto py-[100px]'} >
 
                   <div
                       className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
@@ -193,7 +193,7 @@ export default function Home() {
               </div>
 
 
-              <div className={'products container mx-auto py-[100px]'}>
+              <div className={'products container mx-auto py-[100px]'} id={'products1'}>
 
                   <div
                       className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
@@ -484,7 +484,7 @@ export default function Home() {
                                 className={'px-8 py-5   hover:border-b-black    hover:scale-110 duration-500 uppercase underline hover:bg-yellow-500 hover:text-black border border-b-white border-t-transparent border-r-transparent border-l-transparent    '}>
                               Services
                           </Link>
-                          <Link href={'/#feauters'}
+                          <Link href={'/#products1'}
                                 className={'px-8 py-5  hover:border-b-black     hover:scale-110 duration-500 uppercase underline hover:bg-yellow-500 hover:text-black border border-b-white border-t-transparent border-r-transparent border-l-transparent    '}>
                               Products
                           </Link>
