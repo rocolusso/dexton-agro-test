@@ -153,44 +153,7 @@ export default function Home() {
               </div>
 
 
-              <div className={'feauters container mx-auto py-[100px]'} >
 
-                  <div
-                      className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
-                      Vorteile
-                  </div>
-
-                  <div className={'grid grid-cols-1 sm:grid-cols-2 px-5 py-10 items-center'}>
-
-
-                      <div className={'max-w-[600px] mx-auto'}>
-                          <ul className={'ml-[40px] text-[24px]'}>
-
-                              <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Maßgeschneiderte Verpackungsoptionen: Angepasste Verpackungslösungen, um Ihren
-                                  spezifischen Geschäftsanforderungen gerecht zu werden.
-                              </li>
-
-                              <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Qualitätssicherung: Strenge Qualitätskontrollprozesse garantieren höchste Standards.
-                              </li>
-                          </ul>
-                      </div>
-
-
-                      <Image
-                          className={'rounded-2xl hover:-translate-x-5 duration-300'}
-                          src={feautersImg}
-                          alt={''}
-                          width={1000}
-                          height={1000}
-                      />
-
-
-                  </div>
-
-
-              </div>
 
 
               <div className={'products container mx-auto py-[100px]'} id={'products1'}>
@@ -361,6 +324,16 @@ export default function Home() {
                               <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
                                   Zuverlässige Lieferkette: Mit einem robusten Vertriebsnetz gewährleisten wir eine
                                   pünktliche Lieferung und eine konstante Versorgung.
+                              </li>
+
+
+                              <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
+                                  Maßgeschneiderte Verpackungsoptionen: Angepasste Verpackungslösungen, um Ihren
+                                  spezifischen Geschäftsanforderungen gerecht zu werden.
+                              </li>
+
+                              <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
+                                  Qualitätssicherung: Strenge Qualitätskontrollprozesse garantieren höchste Standards.
                               </li>
                           </ul>
                       </div>

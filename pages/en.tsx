@@ -137,43 +137,7 @@ export default function Home() {
               </div>
 
 
-              <div className={'feauters container mx-auto py-[100px]'} id={'feauters'}>
 
-                  <div
-                      className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
-                      Advantages
-                  </div>
-
-                  <div className={'grid grid-cols-1 sm:grid-cols-2 px-5 py-10 items-center'}>
-
-
-                      <div className={'max-w-[600px] mx-auto'}>
-                          <ul className={'ml-[40px] text-[24px]'}>
-
-                              <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Customized Packaging Options: Tailored packaging solutions to meet your specific business requirements.
-                              </li>
-
-                              <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Quality Assurance: Strict quality control processes ensure the highest standards.
-                              </li>
-                          </ul>
-                      </div>
-
-
-                      <Image
-                          className={'rounded-2xl hover:-translate-x-5 duration-300'}
-                          src={feautersImg}
-                          alt={''}
-                          width={1000}
-                          height={1000}
-                      />
-
-
-                  </div>
-
-
-              </div>
 
 
               <div className={'products container mx-auto py-[100px]'} id={'products1'}>
@@ -339,13 +303,25 @@ export default function Home() {
                           <ul className={'ml-[40px] text-[24px]'}>
 
                               <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Competitive Prices: Our wholesale prices are designed to offer you excellent value for money.
+                                  Competitive Prices: Our wholesale prices are designed to offer you excellent value for
+                                  money.
 
                               </li>
 
                               <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
-                                  Reliable Supply Chain: With a robust distribution network, we ensure timely delivery and consistent supply.
+                                  Reliable Supply Chain: With a robust distribution network, we ensure timely delivery
+                                  and consistent supply.
                               </li>
+
+                              <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
+                                  Customized Packaging Options: Tailored packaging solutions to meet your specific
+                                  business requirements.
+                              </li>
+
+                              <li className={'list-disc py-5  hover:p-5 hover:text-white hover:bg-green-800  hover:translate-x-5 duration-300'}>
+                                  Quality Assurance: Strict quality control processes ensure the highest standards.
+                              </li>
+
                           </ul>
                       </div>
 
