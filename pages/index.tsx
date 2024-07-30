@@ -107,7 +107,7 @@ export default function Home() {
                       </div>
 
                       <div className={'locale'}>
-                          <Link href={'/en'} className={'p-3 bg-yellow-500 text-black rounded'}>
+                          <Link href={'/en'} className={'p-3 bg-yellow-500 text-black'}>
                               EN
                           </Link>
                       </div>
@@ -454,76 +454,83 @@ export default function Home() {
                           Kontakte
                       </div>
 
-                      <div
-                          className={'mx-auto bg-green-950 text-white  p-10 mt-[50px] max-w-[700px] grid grid-cols-1 items-center justify-center text-[24px]'}>
-                          <div className={'p-5'}>
-                              Company Address:
-                              Am Heerdter Krankenhaus 4
-                              40549 Düsseldorf
-                              Germany
-                          </div>
-                          <div className={'p-5'}>
-                              Phone: +491635729793 <br/> (WhatsApp verfügbar)
 
+                      <div className={'flex flex-col sm:flex-row flex-wrap'}>
+
+                          <div
+                              className={'mx-auto bg-green-950 text-white  p-10 mt-[50px] max-w-[700px] grid grid-cols-1 items-center justify-center text-[24px]'}>
+                              <div className={'p-5'}>
+                                  Company Address:
+                                  Am Heerdter Krankenhaus 4
+                                  40549 Düsseldorf
+                                  Germany
+                              </div>
+                              <div className={'p-5'}>
+                                  Phone: +491635729793 <br/> (WhatsApp verfügbar)
+
+                              </div>
+                              <div className={'p-5'}>
+                                  Email: salesdepartment@dexton-handel-gmbh.de
+                              </div>
                           </div>
-                          <div className={'p-5'}>
-                              Email: salesdepartment@dexton-handel-gmbh.de
+
+                          <div className={'form mx-auto'}>
+                              <form onSubmit={submitHandler}
+                                    className={'max-w-[700px] px-10 py-10  mx-auto bg-green-600'}>
+                                  <fieldset disabled={isBlocked}>
+                                      <div className={'uppercase text-center text-[36px] font-bold pb-5 text-white'}>
+                                          Kontaktiere uns
+                                      </div>
+
+                                      <input
+                                          className={'px-5 py-3 w-full mb-3'}
+                                          placeholder={'Name'}
+                                          type={'text'}
+                                          onChange={e => setName(e.target.value)}
+                                          value={name}
+                                      />
+                                      <input
+                                          className={'px-5 py-3 w-full mb-3'}
+                                          placeholder={'Telefon'}
+                                          type={'tel'}
+                                          onChange={e => setPhone(e.target.value)}
+                                          value={phone}
+                                      />
+                                      <input
+                                          className={'px-5 py-3 w-full mb-3'}
+                                          placeholder={'Email'}
+                                          type={'email'}
+                                          onChange={e => setEmail(e.target.value)}
+                                          value={email}
+                                      />
+                                      <input
+                                          className={'px-5 py-3 w-full mb-3'}
+                                          placeholder={'Betreff'}
+                                          type={'text'}
+                                          onChange={e => setSubject(e.target.value)}
+                                          value={subject}
+                                      />
+                                      <textarea
+                                          className={'px-5 py-3 w-full mb-3 h-[150px]'}
+                                          placeholder={'Nachricht'}
+                                          onChange={e => setMessage(e.target.value)}
+                                          value={message}
+                                      />
+                                      <div className={'flex justify-center hover:scale-110 duration-300'}>
+                                          <button type={'submit'}
+                                                  className={'w-[250px] text-white font-bold bg-yellow-500 px-5 py-3 uppercase hover:bg-green-400 hover:text-white duration-300'}>
+                                              Nachricht senden
+                                          </button>
+                                      </div>
+                                  </fieldset>
+                              </form>
                           </div>
+
+
                       </div>
 
+
                   </div>
-              </div>
-
-
-              <div className={'form py-20'}>
-                  <form onSubmit={submitHandler} className={'max-w-[700px] px-10 py-10  mx-auto bg-green-600'}>
-                      <fieldset disabled={isBlocked}>
-                          <div className={'uppercase text-center text-[36px] font-bold pb-5 text-white'}>
-                              Kontaktiere uns
-                          </div>
-
-                          <input
-                              className={'px-5 py-3 w-full mb-3'}
-                              placeholder={'Name'}
-                              type={'text'}
-                              onChange={e => setName(e.target.value)}
-                              value={name}
-                          />
-                          <input
-                              className={'px-5 py-3 w-full mb-3'}
-                              placeholder={'Telefon'}
-                              type={'tel'}
-                              onChange={e => setPhone(e.target.value)}
-                              value={phone}
-                          />
-                          <input
-                              className={'px-5 py-3 w-full mb-3'}
-                              placeholder={'Email'}
-                              type={'email'}
-                              onChange={e => setEmail(e.target.value)}
-                              value={email}
-                          />
-                          <input
-                              className={'px-5 py-3 w-full mb-3'}
-                              placeholder={'Betreff'}
-                              type={'text'}
-                              onChange={e => setSubject(e.target.value)}
-                              value={subject}
-                          />
-                          <textarea
-                              className={'px-5 py-3 w-full mb-3 h-[150px]'}
-                              placeholder={'Nachricht'}
-                              onChange={e => setMessage(e.target.value)}
-                              value={message}
-                          />
-                          <div className={'flex justify-center hover:scale-110 duration-300'}>
-                              <button type={'submit'}
-                                      className={'w-[250px] text-white font-bold bg-yellow-500 px-5 py-3 uppercase hover:bg-green-400 hover:text-white duration-300'}>
-                                  Nachricht senden
-                              </button>
-                          </div>
-                      </fieldset>
-                  </form>
               </div>
 
 
