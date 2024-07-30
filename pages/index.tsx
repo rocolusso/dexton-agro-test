@@ -157,7 +157,7 @@ export default function Home() {
 
                   <div
                       className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
-                      Produkte
+                      Vorteile
                   </div>
 
                   <div className={'grid grid-cols-1 sm:grid-cols-2 px-5 py-10 items-center'}>
@@ -197,7 +197,7 @@ export default function Home() {
 
                   <div
                       className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
-                      PRODUKTE UND QUALITÄT
+                      PRODUKTE
                   </div>
 
                   <div className={'grid grid-cols-1 sm:grid-cols-3 items-start  gap-10 px-5 py-10 '}>
@@ -209,7 +209,7 @@ export default function Home() {
                           </div>
                           <Image
                               className={'rounded-2xl hover:translate-x-5 duration-300'}
-                              src={item3}
+                              src={item1}
                               alt={''}
                               width={1000}
                               height={1000}
@@ -294,7 +294,7 @@ export default function Home() {
                           </div>
                           <Image
                               className={'rounded-2xl hover:translate-x-5 duration-300'}
-                              src={item1}
+                              src={item3}
                               alt={''}
                               width={1000}
                               height={1000}
@@ -404,8 +404,15 @@ export default function Home() {
 
                       <div
                           className={'bg-green-700 p-3 text-white hover:bg-yellow-500 hover:text-black hover:scale-110 duration-300'}>
-                          <Link className={'uppercase  text-[20px]'} href={'https://greengold-int.com'}>
+                          <div className={'uppercase  text-[20px]'}>
                               MBOCUMBO LTD
+                          </div>
+                      </div>
+
+                      <div
+                          className={'bg-green-700 p-3 text-white hover:bg-yellow-500 hover:text-black hover:scale-110 duration-300'}>
+                          <Link className={'uppercase  text-[20px]'} href={'https://greengold-int.com'}>
+
                               GREEN GOLD <br/> INTERNATIONAL LTD
 
                           </Link>
@@ -435,7 +442,7 @@ export default function Home() {
                               Germany
                           </div>
                           <div className={'p-5'}>
-                              Phone: +4915778656905 <br/> (WhatsApp verfügbar)
+                              Phone: +491635729793 <br/> (WhatsApp verfügbar)
 
                           </div>
                           <div className={'p-5'}>
