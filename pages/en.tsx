@@ -27,7 +27,7 @@ export default function Home() {
     const [isBlocked,setIsBlocked] = useState(false)
 
 
-    const submitHandler = async (e)=>{
+    const submitHandler = async (e:any)=>{
         e.preventDefault()
         e.stopPropagation()
 
