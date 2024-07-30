@@ -13,9 +13,56 @@ import item2 from '@/public/assets/products/item2.jpeg'
 import item3 from '@/public/assets/products/item3_1.jpg'
 
 import Link from "next/link";
+import {useState} from "react";
 
 
 export default function Home() {
+
+    const [ name, setName] = useState('')
+    const [phone, setPhone] = useState('')
+    const [email, setEmail] = useState('')
+    const [subject, setSubject] = useState('')
+    const [message, setMessage] = useState('')
+    const [isBlocked,setIsBlocked] = useState(false)
+
+
+    const submitHandler = async (e)=>{
+        e.preventDefault()
+        e.stopPropagation()
+
+        setIsBlocked(true)
+
+        const sendForm = async ()=>{
+            const res = await fetch('/api/form',{
+                method:"POST",
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                body:JSON.stringify({
+                    message:{
+                        username:name,
+                        userphone:phone,
+                        useremail:email,
+                        userSubject:subject,
+                        userMessage:message
+                    },
+                })
+            })
+        }
+
+        await sendForm()
+
+        setName('')
+        setPhone('')
+        setEmail('')
+        setSubject('')
+        setMessage('')
+
+        setIsBlocked(false)
+
+    }
+
+
   return (
       <div className={''}>
           <header className={' pb-5 pt-5 bg-green-950'}>
@@ -89,8 +136,12 @@ export default function Home() {
                           </div>
                           <div className={'mx-auto'}>
                               <p className={'text-[24px] '}>
-                                  Unser Unternehmen spezialisiert sich auf den Großverkauf von Pflanzenöl, wie unraffiniertem und raffiniertem Sonnenblumenöl, Sojaöl und Rapsöl, die aus eigenem Rohmaterial auf dem Territorium von Bulgarien, Argentinien und der Ukraine hergestellt werden.
-                                  Wir bieten hochwertige Produkte, die den unterschiedlichen Bedürfnissen unserer Kunden entsprechen.
+                                  Unser Unternehmen spezialisiert sich auf den Großverkauf von Pflanzenöl, wie
+                                  unraffiniertem und raffiniertem Sonnenblumenöl, Sojaöl und Rapsöl, die aus eigenem
+                                  Rohmaterial auf dem Territorium von Bulgarien, Argentinien und der Ukraine hergestellt
+                                  werden.
+                                  Wir bieten hochwertige Produkte, die den unterschiedlichen Bedürfnissen unserer Kunden
+                                  entsprechen.
                                   Monatliche Produktionsmenge:
                                   Bulgarien
 
@@ -151,9 +202,6 @@ export default function Home() {
 
 
               </div>
-
-
-
 
 
               <div className={'products container mx-auto py-[100px]'} id={'products1'}>
@@ -297,7 +345,7 @@ export default function Home() {
 
               <div className={'benefits container mx-auto py-[100px]'} id={'benefits'}>
 
-              <div
+                  <div
                       className={'text-[1.5rem] sm:text-[3.5rem] hover:underline hover:scale-110 duration-500  text-center uppercase font-bold'}>
                       Vorteile
                   </div>
@@ -427,13 +475,65 @@ export default function Home() {
               </div>
 
 
+              <div className={'form py-20'}>
+                  <form onSubmit={submitHandler} className={'max-w-[700px] px-10 py-10  mx-auto bg-green-600'}>
+                      <fieldset disabled={isBlocked}>
+                          <div className={'uppercase text-center text-[36px] font-bold pb-5 text-white'}>
+                              Kontaktiere uns
+                          </div>
+
+                          <input
+                              className={'px-5 py-3 w-full mb-3'}
+                              placeholder={'Name'}
+                              type={'text'}
+                              onChange={e => setName(e.target.value)}
+                              value={name}
+                          />
+                          <input
+                              className={'px-5 py-3 w-full mb-3'}
+                              placeholder={'Telefon'}
+                              type={'tel'}
+                              onChange={e => setPhone(e.target.value)}
+                              value={phone}
+                          />
+                          <input
+                              className={'px-5 py-3 w-full mb-3'}
+                              placeholder={'Email'}
+                              type={'email'}
+                              onChange={e => setEmail(e.target.value)}
+                              value={email}
+                          />
+                          <input
+                              className={'px-5 py-3 w-full mb-3'}
+                              placeholder={'Betreff'}
+                              type={'text'}
+                              onChange={e => setSubject(e.target.value)}
+                              value={subject}
+                          />
+                          <textarea
+                              className={'px-5 py-3 w-full mb-3 h-[150px]'}
+                              placeholder={'Nachricht'}
+                              onChange={e => setMessage(e.target.value)}
+                              value={message}
+                          />
+                          <div className={'flex justify-center hover:scale-110 duration-300'}>
+                              <button type={'submit'}
+                                      className={'w-[250px] text-white font-bold bg-yellow-500 px-5 py-3 uppercase hover:bg-green-400 hover:text-white duration-300'}>
+                                  Nachricht senden
+                              </button>
+                          </div>
+                      </fieldset>
+                  </form>
+              </div>
+
+
           </main>
 
 
           <footer className={' pb-5 pt-5 bg-green-950'}>
               <div className={'container mx-auto '}>
                   <div className={'flex flex-col md:flex-row items-center justify-between  mx-auto '}>
-                      <Link  href={'/'} className={'px-5 sm:px-0 logo text-[60px] text-white  max-w-fit'}>
+                      <Link href={'/'} className={'px-5 sm:px-0 logo text-[60px] text-white  max-w-fit'}>
                           <div className={'flex gap-10'}>
                               <div>
                                   DEXTON

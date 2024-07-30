@@ -13,9 +13,57 @@ import item2 from '@/public/assets/products/item2.jpeg'
 import item3 from '@/public/assets/products/item3_1.jpg'
 
 import Link from "next/link";
+import {useState} from "react";
 
 
 export default function Home() {
+
+
+    const [ name, setName] = useState('')
+    const [phone, setPhone] = useState('')
+    const [email, setEmail] = useState('')
+    const [subject, setSubject] = useState('')
+    const [message, setMessage] = useState('')
+    const [isBlocked,setIsBlocked] = useState(false)
+
+
+    const submitHandler = async (e)=>{
+        e.preventDefault()
+        e.stopPropagation()
+
+        setIsBlocked(true)
+
+        const sendForm = async ()=>{
+            const res = await fetch('/api/form',{
+                method:"POST",
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                body:JSON.stringify({
+                    message:{
+                        username:name,
+                        userphone:phone,
+                        useremail:email,
+                        userSubject:subject,
+                        userMessage:message
+                    },
+                })
+            })
+        }
+
+        await sendForm()
+
+        setName('')
+        setPhone('')
+        setEmail('')
+        setSubject('')
+        setMessage('')
+
+        setIsBlocked(false)
+
+    }
+
+
   return (
       <div className={''}>
           <header className={' pb-5 pt-5 bg-green-950'}>
@@ -411,6 +459,58 @@ export default function Home() {
                       </div>
 
                   </div>
+              </div>
+
+
+              <div className={'form py-20'}>
+                  <form onSubmit={submitHandler} className={'max-w-[700px] px-10 py-10  mx-auto bg-green-600'}>
+                      <fieldset disabled={isBlocked}>
+                      <div className={'uppercase text-center text-[36px] font-bold pb-5 text-white'}>
+                          Contact Us
+                      </div>
+
+                      <input
+                          className={'px-5 py-3 w-full mb-3'}
+                          placeholder={'Name'}
+                          type={'text'}
+                          onChange={e=>setName(e.target.value)}
+                          value={name}
+                      />
+                      <input
+                          className={'px-5 py-3 w-full mb-3'}
+                          placeholder={'Phone'}
+                          type={'tel'}
+                          onChange={e=>setPhone(e.target.value)}
+                          value={phone}
+                      />
+                      <input
+                          className={'px-5 py-3 w-full mb-3'}
+                          placeholder={'Email'}
+                          type={'email'}
+                          onChange={e=>setEmail(e.target.value)}
+                          value={email}
+                      />
+                      <input
+                          className={'px-5 py-3 w-full mb-3'}
+                          placeholder={'Subject'}
+                          type={'text'}
+                          onChange={e=>setSubject(e.target.value)}
+                          value={subject}
+                      />
+                      <textarea
+                          className={'px-5 py-3 w-full mb-3 h-[150px]'}
+                          placeholder={'Message'}
+                          onChange={e=>setMessage(e.target.value)}
+                          value={message}
+                      />
+                      <div className={'flex justify-center hover:scale-110 duration-300'}>
+                          <button type={'submit'}
+                                  className={'w-[250px] text-white font-bold bg-yellow-500 px-5 py-3 uppercase hover:bg-green-400 hover:text-white duration-300'}>Send
+                              Message
+                          </button>
+                      </div>
+                      </fieldset>
+                  </form>
               </div>
 
 
